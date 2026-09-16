@@ -1,0 +1,99 @@
+# Clinic – Appointment Booking System | Flowchart
+
+## Project Overview
+
+This project is a **BCA college assignment** for a **Clinic – Appointment Booking System**.  
+The flowchart represents the complete appointment-booking process, from entering patient and doctor information to confirming and displaying the appointment.
+
+## Flowchart Process
+
+1. **START**
+2. Enter Patient Details
+   - Patient ID
+   - Patient Name
+   - Age
+   - Gender
+   - Contact Number
+3. Enter Doctor Details
+   - Doctor ID
+   - Doctor Name
+   - Specialization
+   - Available Time
+4. Select Doctor
+5. Select Appointment Date & Time
+6. Check Doctor Availability
+7. Decision: **Is the Doctor Available?**
+   - **NO:** Display “Doctor Not Available” → Select another Date/Time → Check Availability again
+   - **YES:** Continue to create the appointment
+8. Create Appointment
+9. Set Booking Status = **Confirmed**
+10. Display Appointment Details
+    - Patient
+    - Doctor
+    - Date
+    - Time
+    - Booking Status
+11. **END**
+
+## Flowchart Symbols
+
+| Symbol | Meaning |
+|---|---|
+| Oval | Start / End |
+| Rectangle | Process |
+| Diamond | Decision |
+| Parallelogram | Input / Output |
+| Arrow | Flow Direction |
+
+## Design Guidelines
+
+- Use a clean, professional academic design suitable for a BCA student.
+- Use a **white/light-blue background** with a subtle gradient.
+- Use readable fonts and consistent spacing.
+- Clearly label decision branches as **YES** and **NO**.
+- Keep arrows clear and avoid crossing lines.
+- Add small professional icons for:
+  - Patient
+  - Doctor
+  - Calendar
+  - Clock
+  - Appointment
+- Keep the design modern, neat, and suitable for:
+  - College submission
+  - Viva
+  - Classroom presentation
+  - Printing
+
+## Suggested Color Scheme
+
+- 🔵 **Blue:** Patient Details
+- 🟢 **Green:** Doctor Details
+- 🟣 **Purple:** Appointment Date & Time
+- 🟠 **Orange:** Availability Decision
+- 🔷 **Teal:** Appointment Confirmation
+- 🔴 **Red:** Not Available / Error
+- ⚫ **Dark Blue:** START and END
+
+## Objective
+
+The objective of this flowchart is to clearly visualize how a clinic appointment is booked, how doctor availability is checked, and how a confirmed appointment is generated and displayed.
+
+## Expected Outcome
+
+The system should provide a simple and understandable appointment-booking workflow in which:
+
+- Patient information is entered.
+- Doctor information is entered and a doctor is selected.
+- Appointment date and time are selected.
+- Doctor availability is checked.
+- An unavailable slot allows the user to select another date/time.
+- An available slot creates and confirms the appointment.
+- Final appointment details are displayed.
+
+## Assignment Title
+
+**Clinic – Appointment Booking System**
+
+**Diagram:** Flowchart  
+**Academic Level:** BCA  
+**Purpose:** College Assignment / Project Documentation

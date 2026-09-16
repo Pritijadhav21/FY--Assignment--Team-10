@@ -1,0 +1,61 @@
+# ER Diagram – Clinic Appointment Booking System
+
+## About
+This folder contains the Entity Relationship (ER) Diagram for the BCA project **"Clinic – Appointment Booking System"**, drawn using **Crow's Foot notation** on a clean academic white/light-blue background.
+
+**File:** `er_diagram.svg`
+(SVG is a scalable vector format — it stays sharp at any zoom level or print size, and can be opened directly in a browser, or imported into Word/PowerPoint.)
+
+## Entities and Attributes
+
+### 1. PATIENT
+| Attribute | Key |
+|---|---|
+| Patient_ID | Primary Key (PK) |
+| Patient_Name | — |
+| Age | — |
+| Gender | — |
+| Contact_Number | — |
+
+### 2. DOCTOR
+| Attribute | Key |
+|---|---|
+| Doctor_ID | Primary Key (PK) |
+| Doctor_Name | — |
+| Specialization | — |
+| Available_Time | — |
+
+### 3. APPOINTMENT
+| Attribute | Key |
+|---|---|
+| Appointment_ID | Primary Key (PK) |
+| Patient_ID | Foreign Key (FK) → references PATIENT |
+| Doctor_ID | Foreign Key (FK) → references DOCTOR |
+| Appointment_Date | — |
+| Appointment_Time | — |
+| Booking_Status | — |
+
+## Relationships & Cardinality
+
+```
+PATIENT (1) ────< (M) APPOINTMENT (M) >──── (1) DOCTOR
+```
+
+1. **One PATIENT books many APPOINTMENTs** (1:M) — each Appointment belongs to exactly one Patient.
+2. **One DOCTOR is assigned to many APPOINTMENTs** (1:M) — each Appointment is assigned to exactly one Doctor.
+3. APPOINTMENT is the associative/junction entity connecting PATIENT and DOCTOR, holding both foreign keys.
+
+## Notation Key
+- **Bold + underlined** attribute = Primary Key (PK)
+- *Italic* attribute = Foreign Key (FK)
+- Two parallel ticks (⊣⊣) on a connector = "exactly one" (1)
+- Crow's foot (fan of 3 lines) on a connector = "many" (M)
+
+## How to Use
+- Open `er_diagram.svg` in any web browser to view it full-size, or insert it directly into a Word document / PowerPoint slide (Insert → Pictures) for your assignment or presentation.
+- Since it's vector-based, it can be resized freely without losing quality when printed.
+
+## Design Notes
+- Rectangular boxes represent entities; header bars are colour-coded in academic blue for a clean, professional look.
+- The diagram deliberately includes only the three entities and attributes specified — no extra entities or attributes were added.
+- A legend at the bottom explains PK/FK styling and Crow's Foot cardinality symbols for anyone reviewing the diagram.

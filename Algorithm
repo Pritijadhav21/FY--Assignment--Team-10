@@ -1,0 +1,63 @@
+# Clinic – Appointment Booking System
+## Algorithm
+
+**Modules:** Patient Details, Doctor Details, Appointment, Appointment Date and Time
+
+---
+
+### Step-by-Step Algorithm
+
+1. **START**
+
+2. Enter Patient Details
+   - Patient ID
+   - Patient Name
+   - Age
+   - Gender
+   - Contact Number
+
+3. Enter/Select Doctor Details
+   - Doctor ID
+   - Doctor Name
+   - Specialization
+   - Available Time
+
+4. Select Doctor from the list of available doctors (based on Specialization)
+
+5. Select Appointment Date and Time
+
+6. Check Doctor Availability for the selected Date and Time
+
+7. **Decision:** Is the Doctor Available?
+   - **If NO:**
+     7.1 Display message "Doctor Not Available"
+     7.2 Prompt user to select another Date/Time
+     7.3 Go to Step 5
+   - **If YES:**
+     7.4 Proceed to Step 8
+
+8. Create Appointment
+   - Generate Appointment ID
+   - Store Patient ID
+   - Store Doctor ID
+   - Store Appointment Date
+   - Store Appointment Time
+
+9. Set Booking Status = "Confirmed"
+
+10. Display Appointment Details
+    - Appointment ID
+    - Patient Name
+    - Doctor Name
+    - Specialization
+    - Appointment Date
+    - Appointment Time
+    - Booking Status
+
+11. **END**
+
+---
+
+### Summary Flow
+
+START → Enter Patient Details → Select Doctor → Select Date/Time → Check Availability → (NO → Retry) → (YES → Create Appointment → Confirm Status → Display Details) → END
